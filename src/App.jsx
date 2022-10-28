@@ -44,20 +44,19 @@ export default function App() {
 
     return (
         <div className="App relative flex justify-center h-screen" >
-            <div className="relative z-30 bg-[#000000d4] inline-table" >
-                {/* App h-screen bg-center bg-cover bg-[url('./assets/bg.png')] min-w-[400px] */}
+            <div className="relative z-30 bg-[#000000d4] inline-table" > 
                 <div className="">
                     <Header />
                     <div className="container mx-auto my-[60px]">
                         <div className="grid grid-cols-1 sm:grid-cols-2 content-center">
-                            <div className="relative m-auto"> <img className="" src="./assets/left_picture.png" alt="" />
+                            <div className="relative m-auto"> <img className="" src="./left_picture.png" alt="" />
                                 <div className="absolute bottom-[60px] right-[100px] bg-[#999999db] border-[#ffffff8a] rounded-full py-[0px] pl-[10px] pr-[25px]">
                                     <div className="flex items-center md:order-2">
                                         <span className="m-auto inline-flex justify-center items-center p-2 text-sm text-gray-500 rounded cursor-pointer ">
                                             <div className="relative">
-                                                <img className="w-11 h-11 rounded-full" src="./assets/profile.png" alt="" />
+                                                <img className="w-11 h-11 rounded-full" src="./profile.png" alt="" />
                                                 <button className="w-11 h-11 rounded-full absolute top-0 bg-[#000000a6]" onClick={() => played(current_song, current_artist, current_src)}>
-                                                    {isPlaying ? <img className="rounded-full p-[10px]" src="./assets/pause.png" alt="" /> : <img className="rounded-full p-[10px]" src="./assets/play.png" alt="" />}
+                                                    {isPlaying ? <img className="rounded-full p-[10px]" src="./pause.png" alt="" /> : <img className="rounded-full p-[10px]" src="./play.png" alt="" />}
                                                 </button>
                                             </div>
                                         </span>
@@ -119,7 +118,7 @@ export default function App() {
                                             }}>
                                                 <div className="flex items-center order-2 px-[20px] py-[5px]">
                                                     <span data-dropdown-toggle="language-dropdown-menu " className="mr-[20px] inline-flex justify-center items-center p-2 text-[12px] text-black rounded cursor-pointer ">
-                                                        <img className="w-5 h-5 rounded-full mr-[10px]" src="./assets/profile.png" alt="" />
+                                                        <img className="w-5 h-5 rounded-full mr-[10px]" src="./profile.png" alt="" />
                                                         1AZFAFASFASZ
                                                     </span>
                                                 </div>
@@ -128,8 +127,8 @@ export default function App() {
                                                         <img className="h-[220px] w-[220px] rounded-[15px]" src={"./songs_images/" + item.img_src} alt="" />
                                                         <button className="h-[220px] w-[220px] rounded-[15px] absolute top-0 bg-[#000000a6]" onClick={() => played(item.title, item.artist, item.src)}>
                                                             {current_song == item.title && isPlaying ?
-                                                                <img className="h-[80px] w-[80px] m-auto" src="./assets/pause.png" alt="" /> :
-                                                                <img className="h-[80px] w-[80px] m-auto" src="./assets/play.png" alt="" />}
+                                                                <img className="h-[80px] w-[80px] m-auto" src="./pause.png" alt="" /> :
+                                                                <img className="h-[80px] w-[80px] m-auto" src="./play.png" alt="" />}
 
                                                         </button>
                                                     </div>
@@ -147,7 +146,7 @@ export default function App() {
                                                 <div class="grid grid-cols-2">
                                                     <div className="items-start"> <span className="inline-block font-semibold">STARTING BID</span> </div>
                                                     <div className="items-end text-right">
-                                                        <img className="h-[20px] w-[20px] rounded-[15px] inline-block" src="./assets/crypto_icon.png" alt="" />
+                                                        <img className="h-[20px] w-[20px] rounded-[15px] inline-block" src="./crypto_icon.png" alt="" />
                                                         <span className="inline-block font-medium mr-[10px] ml-[5px]">1</span>
                                                         <span className="inline-block font-normal">$ 43.42</span>
                                                     </div>
