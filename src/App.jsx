@@ -120,16 +120,16 @@ export default function App() {
                         <div className="container mx-auto">
                             {/* <AudioPlayer
                                 isPlaying={isPlaying}
-                                src={"../src/assets/songs/" + current_src}
+                                src={"./songs/" + current_src}
                                 duration={duration}
                             /> */}
-                            <audio ref={ref} src={"../src/assets/songs/" + current_src} id="audios" onEnded={handleVideoEnded} />
+                            <audio ref={ref} src={"./songs/" + current_src} id="audios" onEnded={handleVideoEnded} />
                             <div className="grid grid-cols-4 gap-5 p-[25px]">
                                 {playlists.map(function (item, i) {
                                     return <div className="p-[30px] m-auto">
                                         <div className="bg-[#390066] rounded-[25px]">
                                             <div className={"rounded-[25px] bg-blend-overlay bg-[#ffffffba] bg-cover bg-[url('./assets/songs_images/Call me_Cover (front)_e.jpg')]"} style={{
-                                                backgroundImage: 'url("../src/assets/songs_images/' + item.img_src + '")'
+                                                backgroundImage: 'url("./songs_images/' + item.img_src + '")'
                                             }}>
                                                 <div className="flex items-center order-2 px-[20px] py-[5px]">
                                                     <span data-dropdown-toggle="language-dropdown-menu " className="mr-[20px] inline-flex justify-center items-center p-2 text-[12px] text-black rounded cursor-pointer ">
@@ -139,7 +139,7 @@ export default function App() {
                                                 </div>
                                                 <div className="relative px-[20px] my-[10px]">
                                                     <div className="w-[220px] m-auto">
-                                                        <img className="h-[220px] w-[220px] rounded-[15px]" src={"../src/assets/songs_images/" + item.img_src} alt="" />
+                                                        <img className="h-[220px] w-[220px] rounded-[15px]" src={"./songs_images/" + item.img_src} alt="" />
                                                         <button className="h-[220px] w-[220px] rounded-[15px] absolute top-0 bg-[#000000a6]" onClick={() => played(item.title, item.artist, item.src)}>
                                                             {current_song == item.title && isPlaying ?
                                                                 <img className="h-[80px] w-[80px] m-auto" src="../src/assets/pause.png" alt="" /> :
